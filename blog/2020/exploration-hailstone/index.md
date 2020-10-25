@@ -25,15 +25,15 @@ Let's try 3. We get 10, then 5, then 16, then 8, then 4, then 2, then 1.
 
 Here are the sequences for the numbers 1-9:
 
-    * `1: [4, 2, 1]`
-    * `2: [1]`
-    * `3: [10, 5, 16, 8, 4, 2, 1]`
-    * `4: [2, 1]`
-    * `5: [16, 8, 4, 2, 1]`
-    * `6: [3, 10, 5, 16, 8, 4, 2, 1]`
-    * `7: [22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1]`
-    * `8: [4, 2, 1]`
-    * `9: [28, 14, 7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1]`
+  * 1: [4, 2, 1]
+  * 2: [1]
+  * 3: [10, 5, 16, 8, 4, 2, 1]
+  * 4: [2, 1]
+  * 5: [16, 8, 4, 2, 1]
+  * 6: [3, 10, 5, 16, 8, 4, 2, 1]
+  * 7: [22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1]
+  * 8: [4, 2, 1]
+  * 9: [28, 14, 7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1]
 
 These sequences of _iterates_ are sometimes called "hailstone sequences" because
 of the way they repeatedly rise and then fall before eventually falling to the
@@ -59,9 +59,9 @@ So let's play.
 
 Here's a python function that returns a given number's hailstone sequence. We
 assume the sequence should not include the original number, so the sequence
-returned for 1 is `[4, 2, 1` and not `[1, 4, 2, 1]`.
+returned for 1 is `[4, 2, 1]` and not `[1, 4, 2, 1]`.
 
-```
+``` python 
 def hailstone(n):
     sequence = []
     while True:
@@ -73,7 +73,7 @@ def hailstone(n):
 
 Easy peasy. Great, so let's reproduce our results above for the numbers 1 to 9: 
 
-```
+``` python 
 for n in range(1,10):
     print(f"{n}: {hailstone(n)}")
 ```
