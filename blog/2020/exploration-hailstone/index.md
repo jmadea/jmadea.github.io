@@ -99,9 +99,22 @@ easy proof by induction.[^proof]
 
 
 
-47
+48
 
-[^proof]: Here is a proof that any power of four can be expressed as 3*k*+1. First, we show that there exists an _n_ such that 4<sup>_n_</sup> can be expressed as 3*k*+1. This is easy to do. Let _n_ = 0. 4<sup>0</sup> = 1 = 3(0) + 1. So, when _n_=0 and _k_=0, 4<sup>_n_</sup> = 3*k*+1. Now, to prove by induction, we must show that _if_ 4<sup>_n_</sup> can be expressed as 3*k*+1 _then_ 4<sup>_n_+1</sup> can also be expressed as 3*k*+1.  Assuming 4<sup>_n_</sup> = 3*m* + 1 &#8658; 4<sup>_n_</sup> = 4(3*m* + 1) &Implies; 4<sup>_n_+1</sup> = 12*m* + 4 &Implies; 4<sup>_n_+1</sup> = 12*m* + 3 + 1 &Implies; 4<sup>_n_+1</sup> = 3(4*m* + 1) + 1 &there4; _if_ 4<sup>_n_</sup> = 3*m* + 1 _then_  4<sup>_n_+1</sup> = 3*k* + 1 (where *k* = 4*m* + 1)
+[^proof]: Here is a proof that any power of four can be expressed as 3*k*+1.
+First, we show that there exists an _n_ such that 4<sup>_n_</sup> can be
+expressed as 3*k*+1. This is easy to do. 
+Let _n_ = 0. 4<sup>0</sup> = 1 = 3(0) + 1. So, when _n_=0 and _k_=0,
+4<sup>_n_</sup> = 3*k*+1. Now, to prove by induction, we must show that _if_
+4<sup>_n_</sup> can be expressed as 3*k*+1 _then_ 4<sup>_n_+1</sup> can also be
+expressed as 3*k*+1.
+Assuming 4<sup>_n_</sup> = 3*m* + 1 
+&#8658; 4<sup>_n_</sup> = 4(3*m* + 1)
+&#8658; 4<sup>_n_+1</sup> = 12*m* + 4 
+&#8658; 4<sup>_n_+1</sup> = 12*m* + 3 + 1 
+&#8658; 4<sup>_n_+1</sup> = 3(4*m* + 1) + 1 
+&there4; _if_ 4<sup>_n_</sup> = 3*m* + 1 _then_  4<sup>_n_+1</sup> = 3*k* + 1 
+(where *k* = 4*m* + 1)
 
 
 
