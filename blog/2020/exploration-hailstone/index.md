@@ -78,7 +78,7 @@ for n in range(1,10):
     print(f"{n}: {hailstone(n)}")
 ```
 
-No problem. But what now? Well, after looking at the hailstone seqUences for
+No problem. But what now? Well, after looking at the hailstone sequences for
 various numbers we may start to notice some things. First, our sequences always
 seem to reach a power of 2, after which they trivially decrease to 1. That makes
 sense when we think about it.  The only way for our sequences to decrease is
@@ -99,8 +99,8 @@ easy proof by induction.[^proof]
 
 
 
-51
+52
 
-[^proof]: Here is a proof that any power of four can be expressed as 3*k*+1.  First, we show that there exists an _n_ such that 4<sup>_n_</sup> can be expressed as 3*k*+1. This is easy to do.  Let _n_ = 0. 4<sup>0</sup> = 1 = 3(0) + 1. So, when _n_=0 and _k_=0, 4<sup>_n_</sup> = 3*k*+1. Now, to prove by induction, we must show that _if_ 4<sup>_n_</sup> can be expressed as 3*k*+1 _then_ 4<sup>_n_+1</sup> can also be expressed as 3*k*+1.  Assuming 4<sup>_n_</sup> = 3*m* + 1 &#8658; 4<sup>_n_</sup> = 4(3*m* + 1) &#8658; 4<sup>_n_+1</sup> = 12*m* + 4 &#8658; 4<sup>_n_+1</sup> = 12*m* + 3 + 1 &#8658; 4<sup>_n_+1</sup> = 3(4*m* + 1) + 1 &there4; _if_ 4<sup>_n_</sup> = 3*m* + 1 _then_  4<sup>_n_+1</sup> = 3*k* + 1 (where *k* = 4*m* + 1) 
+[^proof]: Here is a proof that any power of four can be expressed as 3*k*+1. First, we show that there exists an _n_ such that 4<sup>_n_</sup> can be expressed as 3*j*+1. This is easy to do. Let _n_ = 0. Then 4<sup>_n_</sup> = 4<sup>0</sup> = 1 = 3(0) + 1. So, when _j_=0 and _k_=0, 4<sup>_n_</sup> = 3*j*+1. Thus, we have our base case. Next, to prove by induction, we must only show that _if_ 4<sup>_n_</sup> can be expressed as 3*j*+1 _then_ 4<sup>_n_+1</sup> can be expressed as 3*k*+1. We proceed by "assuming our antecedent"; in other words, we assume the "if" part of that if-then statement. : 4<sup>_n_</sup> = 3*j* + 1 &#8658; 4<sup>_n_</sup> = 4(3*k* + 1) &#8658; 4<sup>_n_+1</sup> = 12*k* + 4 &#8658; 4<sup>_n_+1</sup> = 12*k* + 3 + 1 &#8658; 4<sup>_n_+1</sup> = 3(4*k* + 1) + 1 &there4; _if_ 4<sup>_n_</sup> = 3*k* + 1 _then_  4<sup>_n_+1</sup> = 3*k* + 1 (where *k* = 4*m* + 1)Q.E.D. (That's what people write when they finish a proof. I think it stands for "Quite Easy! Duh!" or maybe something in Latin.) 
 
 
