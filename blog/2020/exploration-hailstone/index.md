@@ -99,7 +99,7 @@ easy proof by induction.[^proof]
 
 
 
-
+42
 
 [^proof]: Here is a proof that any power of four can be expressed as 3*k*+1.  
   First, we show that there exists an _n_ such that 4<sup>_n_</sup> can be
@@ -112,7 +112,8 @@ easy proof by induction.[^proof]
   4<sup>_n_+1</sup> = 12*m* + 4  
   4<sup>_n_+1</sup> = 12*m* + 3 + 1  
   4<sup>_n_+1</sup> = 3(4*m* + 1) + 1  
-  &there4; _if_ 4<sup>_n_</sup> = 3*m* + 1 _then_  4<sup>_n_+1</sup> = 3*k* + 1 (_where_ *k* = 4*m* + 1)
+  &there4; _if_ 4<sup>_n_</sup> = 3*m* + 1 _then_  4<sup>_n_+1</sup> = 3*k* + 1
+  (_where_ *k* = 4*m* + 1)
 
 
 
