@@ -71,9 +71,52 @@ def hailstone(n):
     return sequence
 ```
 
-Easy peasy. Great, so let's reproduce our results above for the numbers 1 to 9: 
+Easy peasy. Great, so now let's reproduce our results above for the numbers 1 to 9: 
 
 ``` python 
 for n in range(1,10):
     print(f"{n}: {hailstone(n)}")
 ```
+
+No problem. But what now? Well, after looking at the hailstone seqUences for
+various numbers we may start to notice some things. First, our sequences always
+seem to reach a power of 2, after which they trivially decrease to 1. That makes
+sense when we think about it.  The only way for our sequences to decrease is
+when we hit an even number and divide by two. That means we must always get to 1
+by dividing 2. Similarly, the only way to get to 2 is through 4. So all of our
+sequences for n > 4 must end in `[4, 2, 1]`. The only way to get to 4 is either
+by multiplying 1 by 3 and adding 1 or by dividing 8 by 2. Since we stop our
+sequences when we get to 1, we only get to 4 through dividing 8 by 2 (except in
+the special case when we start with 1.) Furthermore, as 8 cannot be expressed as
+3k+1, we must get 8 by dividing 16 by 2. So all of our sequences other than
+those starting with 8, 4, 2, 1 must end in `[16, 8, 4, 2, 1]`.
+
+Well, that's interesting. It highlights the fact that only some powers of 2 can
+be expressed as 3k+1. Upon closer inspection, it appears that it is powers of 4 that
+can be expressed as 3k+1. Is that always the case? Spoiler: yes it is. It's an
+easy proof by induction.[^proof]
+
+
+
+
+
+
+[^proof]: Here is a proof that any power of four can be expressed as 3k+1.
+
+First, we show that there exists an _n_ such that 4<sup>_n_</sup> can be
+expressed as 3k+1. This is easy to do. Let _n_ = 0. 4<sup>0</sup> = 1 = 3(0) +
+1. So, when _n_=0 and k=0, 4<sup>_n_</sup> = 3k+1.
+
+Now, to prove by induction, we must show that _if_ 4<sup>_n_</sup> can be
+expressed as 3k+1 _then_ 4<sup>_n_+1</sup> can also be expressed as 3k+1.
+
+4<sup>_n_</sup> = 3m + 1   
+4<sup>_n_</sup> = 4(3m + 1)  
+4<sup>_n_+1</sup> = 12m + 4  
+4<sup>_n_+1</sup> = 12m + 3 + 1  
+4<sup>_n_+1</sup> = 3(4m + 1) + 1  
+&there4; _if_ 4<sup>_n_</sup> = 3m + 1 _then_  4<sup>_n_+1</sup> = 3k + 1
+(_where_ k = 4m + 1)
+
+
+
