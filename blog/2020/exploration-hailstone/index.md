@@ -103,20 +103,19 @@ easy proof by induction.[^proof]
 
 [^proof]: Here is a proof that any power of four can be expressed as 3k+1.
 
-First, we show that there exists an _n_ such that 4<sup>_n_</sup> can be
-expressed as 3k+1. This is easy to do. Let _n_ = 0. 4<sup>0</sup> = 1 = 3(0) +
-1. So, when _n_=0 and k=0, 4<sup>_n_</sup> = 3k+1.
+  First, we show that there exists an _n_ such that 4<sup>_n_</sup> can be
+  expressed as 3k+1. This is easy to do. Let _n_ = 0. 4<sup>0</sup> = 1 = 3(0) +
+  1. So, when _n_=0 and k=0, 4<sup>_n_</sup> = 3k+1.
 
-Now, to prove by induction, we must show that _if_ 4<sup>_n_</sup> can be
-expressed as 3k+1 _then_ 4<sup>_n_+1</sup> can also be expressed as 3k+1.
+  Now, to prove by induction, we must show that _if_ 4<sup>_n_</sup> can be
+  expressed as 3k+1 _then_ 4<sup>_n_+1</sup> can also be expressed as 3k+1.
 
-4<sup>_n_</sup> = 3m + 1   
-4<sup>_n_</sup> = 4(3m + 1)  
-4<sup>_n_+1</sup> = 12m + 4  
-4<sup>_n_+1</sup> = 12m + 3 + 1  
-4<sup>_n_+1</sup> = 3(4m + 1) + 1  
-&there4; _if_ 4<sup>_n_</sup> = 3m + 1 _then_  4<sup>_n_+1</sup> = 3k + 1
-(_where_ k = 4m + 1)
+  4<sup>_n_</sup> = 3m + 1   
+  4<sup>_n_</sup> = 4(3m + 1)  
+  4<sup>_n_+1</sup> = 12m + 4  
+  4<sup>_n_+1</sup> = 12m + 3 + 1  
+  4<sup>_n_+1</sup> = 3(4m + 1) + 1  
+  &there4; _if_ 4<sup>_n_</sup> = 3m + 1 _then_  4<sup>_n_+1</sup> = 3k + 1 (_where_ k = 4m + 1)
 
 
 
