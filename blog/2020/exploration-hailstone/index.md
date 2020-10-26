@@ -2,7 +2,7 @@
 ## Exploration: The Hailstone Numbers
 
 An introductory probe to the most alluring problem in mathematics for people
-who are just interested in this kinda stuff.[^alternate description]
+who are just interested in this kinda stuff.[^altdesc]
 
 (In other words, if you found this page, you'll probably be able to understand it.) 
 
@@ -194,7 +194,7 @@ stronger than what we were going for. This shows that our result will hold not
 only for 3(2<sup>_n_</sup> but for any number 3*m*(2<sup>_n_</sup>). 
 
 So, for example, we can say for sure that every _i_ such that _i_ =
-178092921(2<sup>_n_</sup>)[^div-by-three] will descend directly to 178092921 and
+178092921(2<sup>_n_</sup>)[^div3] will descend directly to 178092921 and
 that none of the numbers encountered along the way are possible hailstone
 iterates of an odd number. (We should note, however, that this tells us nothing
 about the hailstone sequence of 178092921.)
@@ -223,9 +223,9 @@ Okay, time to recap what we know so far.
 
 
 
-[^alternate description]: In which we slyly teach students about mathematical proof by contradiction and induction, graph data structures, python generators, and more!
+[^altdesc]: In which we slyly teach students about mathematical proof by contradiction and induction, graph data structures, python generators, and more!
 
-[^div-by-three] We know 178092921 is divisible by three because the sum of its digits is divisible by three. This is a nifty trick to know about. 
+[^div3] We know 178092921 is divisible by three because the sum of its digits is divisible by three. This is a nifty trick to know about. 
 
 [^proof]: Here is a proof that any power of four can be expressed as 3*k*+1. First, we show that there exists an _n_ such that 4<sup>_n_</sup> can be expressed as 3*j*+1. This is easy to do. Let _n_ = 0. Then 4<sup>_n_</sup> = 4<sup>0</sup> = 1 = 3(0) + 1. So, when _j_=0 and _k_=0, 4<sup>_n_</sup> = 3*j*+1. Thus, we have our base case. Next, to prove by induction, we must only show that _if_ 4<sup>_n_</sup> can be expressed as 3*j*+1 _then_ 4<sup>_n_+1</sup> can be expressed as 3*k*+1. We proceed by "assuming our antecedent"; in other words, we assume the "if" part of that if-then statement. : 4<sup>_n_</sup> = 3*j* + 1 &#8658; 4<sup>_n_</sup> = 4(3*k* + 1) &#8658; 4<sup>_n_+1</sup> = 12*k* + 4 &#8658; 4<sup>_n_+1</sup> = 12*k* + 3 + 1 &#8658; 4<sup>_n_+1</sup> = 3(4*k* + 1) + 1 &there4; _if_ 4<sup>_n_</sup> = 3*k* + 1 _then_  4<sup>_n_+1</sup> = 3*k* + 1 (where *k* = 4*m* + 1)Q.E.D. (That's what people write when they finish a proof. I think it stands for "Quite Easy! Duh!" or maybe something in Latin.) 
 
