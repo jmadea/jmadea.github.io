@@ -225,7 +225,7 @@ Okay, time to recap what we know so far.
 
 [^altdesc]: In which we slyly teach students about mathematical proof by contradiction and induction, graph data structures, python generators, and more!
 
-[^divbythree] We know 178092921 is divisible by three because the sum of its digits is divisible by three. This is a nifty trick to know about. 
+[^divbythree]: We know 178092921 is divisible by three because the sum of its digits is divisible by three. This is a nifty trick to know about. 
 
 [^proof]: Here is a proof that any power of four can be expressed as 3*k*+1. First, we show that there exists an _n_ such that 4<sup>_n_</sup> can be expressed as 3*j*+1. This is easy to do. Let _n_ = 0. Then 4<sup>_n_</sup> = 4<sup>0</sup> = 1 = 3(0) + 1. So, when _j_=0 and _k_=0, 4<sup>_n_</sup> = 3*j*+1. Thus, we have our base case. Next, to prove by induction, we must only show that _if_ 4<sup>_n_</sup> can be expressed as 3*j*+1 _then_ 4<sup>_n_+1</sup> can be expressed as 3*k*+1. We proceed by "assuming our antecedent"; in other words, we assume the "if" part of that if-then statement. : 4<sup>_n_</sup> = 3*j* + 1 &#8658; 4<sup>_n_</sup> = 4(3*k* + 1) &#8658; 4<sup>_n_+1</sup> = 12*k* + 4 &#8658; 4<sup>_n_+1</sup> = 12*k* + 3 + 1 &#8658; 4<sup>_n_+1</sup> = 3(4*k* + 1) + 1 &there4; _if_ 4<sup>_n_</sup> = 3*k* + 1 _then_  4<sup>_n_+1</sup> = 3*k* + 1 (where *k* = 4*m* + 1)Q.E.D. (That's what people write when they finish a proof. I think it stands for "Quite Easy! Duh!" or maybe something in Latin.) 
 
